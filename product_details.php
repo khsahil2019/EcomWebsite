@@ -1,118 +1,34 @@
-<html data-wf-domain="homestore-flowsark.webflow.io" data-wf-page="636e657549cf12544334a16b"
+<?php 
+include('includes/connect.php');
+include('functions/common_functions.php');
+?>
+
+<html data-wf-domain="homestore-flowsark.webflow.io" data-wf-page="636b81cdf698e1f4aafd7d01"
     data-wf-site="636b7ab8528dc749ad44d9af" class=" w-mod-js w-mod-ix">
 
 <head>
-    <style>
-        .gm-err-container {
-            height: 100%;
-            width: 100%;
-            display: table;
-            background-color: #e8eaed;
-            position: relative;
-            left: 0;
-            top: 0
-        }
-
-        .gm-err-content {
-            -webkit-border-radius: 1px;
-            -moz-border-radius: 1px;
-            border-radius: 1px;
-            padding-top: 0;
-            padding-left: 10%;
-            padding-right: 10%;
-            position: static;
-            vertical-align: middle;
-            display: table-cell
-        }
-
-        .gm-err-content a {
-            color: #3c4043
-        }
-
-        .gm-err-icon {
-            text-align: center
-        }
-
-        .gm-err-title {
-            margin: 5px;
-            margin-bottom: 20px;
-            color: #3c4043;
-            font-family: Roboto, Arial, sans-serif;
-            text-align: center;
-            font-size: 24px
-        }
-
-        .gm-err-message {
-            margin: 5px;
-            color: #3c4043;
-            font-family: Roboto, Arial, sans-serif;
-            text-align: center;
-            font-size: 12px
-        }
-
-        .gm-err-autocomplete {
-            padding-left: 20px;
-            background-repeat: no-repeat;
-            -moz-background-size: 15px 15px;
-            background-size: 15px 15px
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        .gm-style-moc {
-            background-color: rgba(0, 0, 0, .45);
-            pointer-events: none;
-            text-align: center;
-            -webkit-transition: opacity ease-in-out;
-            -o-transition: opacity ease-in-out;
-            transition: opacity ease-in-out
-        }
-
-        .gm-style-mot {
-            color: white;
-            font-family: Roboto, Arial, sans-serif;
-            font-size: 22px;
-            margin: 0;
-            position: relative;
-            top: 50%;
-            -moz-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
-            -webkit-transform: translateY(-50%);
-            -ms-transform: translateY(-50%)
-        }
-
-        sentinel {}
-    </style>
-    <style>
-        .gm-style img {
-            max-width: none;
-        }
-
-        .gm-style {
-            font: 400 11px Roboto, Arial, sans-serif;
-            text-decoration: none;
-        }
-    </style>
     <style>
         .wf-force-outline-none[tabindex="-1"]:focus {
             outline: none;
         }
     </style>
     <meta charset="utf-8">
-    <title>Homestore - Webflow Ecommerce Website Template</title>
+    <title>TIED RIBBONS Designer DSW Chair</title>
     <meta
-        content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
+        content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
         name="description">
-    <meta content="Homestore - Webflow Ecommerce Website Template" property="og:title">
+    <meta content="TIED RIBBONS Designer DSW Chair" property="og:title">
     <meta
-        content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
+        content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
         property="og:description">
-    <meta content="Homestore - Webflow Ecommerce Website Template" property="twitter:title">
+    <meta content="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878dcd3f80a9c0a749a798_product-1.jpg"
+        property="og:image">
+    <meta content="TIED RIBBONS Designer DSW Chair" property="twitter:title">
     <meta
-        content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
+        content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
         property="twitter:description">
+    <meta content="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878dcd3f80a9c0a749a798_product-1.jpg"
+        property="twitter:image">
     <meta property="og:type" content="website">
     <meta content="summary_large_image" name="twitter:card">
     <meta content="width=device-width, initial-scale=1" name="viewport">
@@ -127,30 +43,10 @@
         rel="apple-touch-icon">
     <script
         type="text/javascript">window.__WEBFLOW_CURRENCY_SETTINGS = { "currencyCode": "USD", "$init": true, "symbol": "$", "decimal": ".", "fractionDigits": 2, "group": ",", "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}", "hideDecimalForWholeNumbers": false };</script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/common.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/util.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/marker.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/map.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/onion.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps/api/js/ViewportInfoService.GetViewportInfo?1m6&amp;1m2&amp;1d33.86359002751751&amp;2d-118.78420431285944&amp;2m2&amp;1d34.24981934718383&amp;2d-117.7002704157314&amp;2u12&amp;4sen-US&amp;5e0&amp;6sm%40633000000&amp;7b0&amp;8e0&amp;12e1&amp;13shttps%3A%2F%2Fhomestore-flowsark.webflow.io%2Fcontact&amp;14b1&amp;callback=_xdc_._h8sfua&amp;key=AIzaSyCNmxg9SMwIgFU6plIggZsAdtFjdGGpX8Y&amp;token=91665"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/infowindow.js"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps/api/js/AuthenticationService.Authenticate?1shttps%3A%2F%2Fhomestore-flowsark.webflow.io%2Fcontact&amp;4sAIzaSyCNmxg9SMwIgFU6plIggZsAdtFjdGGpX8Y&amp;7m1&amp;1e80&amp;8b0&amp;callback=_xdc_._41ru0w&amp;key=AIzaSyCNmxg9SMwIgFU6plIggZsAdtFjdGGpX8Y&amp;token=113849"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps/vt?pb=!1m4!1m3!1i12!2i700!3i1634!1m4!1m3!1i12!2i700!3i1635!1m4!1m3!1i12!2i701!3i1634!1m4!1m3!1i12!2i701!3i1635!1m4!1m3!1i12!2i702!3i1634!1m4!1m3!1i12!2i702!3i1635!1m4!1m3!1i12!2i703!3i1634!1m4!1m3!1i12!2i703!3i1635!1m4!1m3!1i12!2i700!3i1636!1m4!1m3!1i12!2i701!3i1636!1m4!1m3!1i12!2i702!3i1636!1m4!1m3!1i12!2i703!3i1636!1m4!1m3!1i12!2i704!3i1634!1m4!1m3!1i12!2i704!3i1635!1m4!1m3!1i12!2i704!3i1636!2m3!1e0!2sm!3i633371775!3m12!2sen-US!3sUS!5e18!12m4!1e68!2m2!1sset!2sRoadmap!12m3!1e37!2m1!1ssmartmaps!4e3!12m1!5b1!23i1379903&amp;callback=_xdc_._8ya5hm&amp;key=AIzaSyCNmxg9SMwIgFU6plIggZsAdtFjdGGpX8Y&amp;token=17514"></script>
-    <script type="text/javascript" charset="UTF-8"
-        src="https://maps.googleapis.com/maps-api-v3/api/js/51/8/controls.js"></script>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1095.0" data-gr-ext-installed="">
-   
+     
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="navbar w-nav">
         <div class="container w-container">
@@ -422,64 +318,14 @@
         </div>
         <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
     </div>
-    <div class="page-header text-center wf-section">
-        <div class="container w-container">
-            <div class="page-header-wrapper">
-                <h1>Contact</h1>
-                <p>It is a long established fact that a reader will be distracted by the readable <br>content of a page
-                    when looking at its layout.</p>
-            </div>
-        </div>
-    </div>
-    <div class="section-contact section-top-bottom wf-section">
-        <div class="container w-container">
-            <div class="w-layout-grid contact-grid">
-                <div id="w-node-_727bafa0-6a5b-f534-cae3-6c9029878ba9-4334a16b">
-                    <h3>Let us help<br></h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or randomised.</p>
-                    <p class="contact-address">1810 Stone Canyon<br>Rd Longmont, Colorado(CO), 80503</p>
-                    <p class="contact-email-address">info@gmail.com<br></p>
-                    <p class="contact-phone-number">+2 547 571 5263</p>
-                </div>
-                <div class="w-form">
-                    <form id="Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get"
-                        aria-label="Contact Form">
-                        <div class="field-group"><label for="Name" class="field-label">Name</label><input type="text"
-                                class="field-input w-input" maxlength="256" name="Name" data-name="Name" placeholder=""
-                                id="Name"></div>
-                        <div class="field-group"><label for="Email" class="field-label">Email</label><input type="email"
-                                class="field-input w-input" maxlength="256" name="Email" data-name="Email"
-                                placeholder="" id="Email" required=""></div>
-                        <div class="field-group"><label for="Phone" class="field-label">Phone</label><input type="tel"
-                                class="field-input w-input" maxlength="256" name="Phone" data-name="Phone"
-                                placeholder="" id="Phone"></div>
-                        <div class="field-group"><label for="field" class="field-label">Select</label><select id="field"
-                                name="field" data-name="Field" class="field-select w-select">
-                                <option value="">Select one...</option>
-                                <option value="First">First choice</option>
-                                <option value="Second">Second choice</option>
-                                <option value="Third">Third choice</option>
-                            </select></div>
-                        <div class="field-group"><label for="Comment" class="field-label">Comment</label><textarea
-                                id="Comment" name="Comment" maxlength="5000" data-name="Comment" placeholder=""
-                                class="field-input field-textarea w-input"></textarea></div><input type="submit"
-                            value="Submit" data-wait="Please wait..." class="button-border w-button">
-                    </form>
-                    <div class="success-message w-form-done" tabindex="-1" role="region"
-                        aria-label="Contact Form success">
-                        <div>Thank you! Your submission has been received!</div>
-                    </div>
-                    <div class="error-message w-form-fail" tabindex="-1" role="region"
-                        aria-label="Contact Form failure">
-                        <div>Oops! Something went wrong while submitting the form.</div>
-                    </div>
-                </div>
-            </div>
-           
-        </div>
-    </div>
-    <div class="footer wf-section">
+ 
+                    <?php
+                    view_details();
+                    
+                    
+                    ?> 
+ 
+ <div class="footer wf-section">
         <div class="container w-container">
             <div class="w-layout-grid footer-grid">
                 <div id="w-node-_2081249a-3245-4081-2479-06333c99681a-3c996817" class="footer-subscribe">
@@ -533,11 +379,6 @@
         type="text/javascript"></script>
     <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
     <div id="torrent-scanner-popup" style="display: none;"></div>
-    <div
-        style="position: absolute; left: 0px; top: -2px; height: 1px; overflow: hidden; visibility: hidden; width: 1px;">
-        <span
-            style="position: absolute; font-size: 300px; width: auto; height: auto; margin: 0px; padding: 0px; font-family: Roboto, Arial, sans-serif;">BESbswy</span>
-    </div>
 </body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 
 </html>

@@ -2014,10 +2014,16 @@ textarea.w-select {
     vertical-align: top;
     text-decoration: none;
     color: #222222;
-    padding: 20px;
+    padding-top: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-align: left;
     margin-left: auto;
     margin-right: auto
+}
+
+.w-nav-link img{
+    margin-top: -25%;
 }
 
 .w-nav-link.w--current {
@@ -4959,6 +4965,7 @@ li {
     margin-bottom: 5px;
 }
 
+
 img {
     display: inline-block;
     max-width: 100%;
@@ -5405,10 +5412,20 @@ figcaption {
 .product-item {
     position: relative;
 }
+.product-item img{
+    object-fit: cover;
+}
 
 .product-image-wrapper {
     position: relative;
     border-radius: 10px;
+}
+
+.product-image-wrapper img{
+    width: 350px;
+    height: 340px;
+    display: inline-block;
+    object-fit: scale-down;
 }
 
 .product-thumbnail {
@@ -5460,7 +5477,7 @@ figcaption {
     padding: 3px 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    background-color: #ffdc64;
+    background-color: red;
     font-size: 14px;
     text-decoration: none;
 }
@@ -5620,7 +5637,7 @@ figcaption {
 .feature-list {
     display: -ms-grid;
     display: grid;
-    padding: 75px 90px 400px;
+    padding: 75px 90px 100px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -6640,7 +6657,7 @@ figcaption {
 }
 
 .hero-content {
-    padding-top: 550px;
+    padding-top: 200px;
     padding-bottom: 80px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

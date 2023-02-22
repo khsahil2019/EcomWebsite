@@ -1,5 +1,7 @@
 <?php
-include('includes/connect.php')
+
+include('functions/common_functions.php');
+
 ?>
 <!DOCTYPE html>
 <!-- This site was created in Webflow. https://www.webflow.com -->
@@ -10,6 +12,7 @@ include('includes/connect.php')
 <head>
     <meta charset="utf-8" />
     <title></title>
+  
     <meta
         content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
         name="description" />
@@ -25,7 +28,9 @@ include('includes/connect.php')
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
-    <link rel="stylesheet" href="style.css">
+    <style>
+  <?php include "style.css" ?>
+</style>
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
     <script type="text/javascript">
         ! function (o, c) {
@@ -50,19 +55,22 @@ include('includes/connect.php')
             "hideDecimalForWholeNumbers": false
         };
     </script>
+      <style media="screen">
+  
+
+</style>
 </head>
 
 <body>
-    <div class="top-bar">
-        <div class="top-bar-text">Free shipping for all orders of $150+</div>
-    </div>
+  
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="navbar w-nav">
         <div class="container w-container">
             <div class="w-layout-grid navbar-grid">
                 <nav role="navigation" id="w-node-c2fb87ad-b285-099a-cd27-785fd4bbdf32-d4bbdf2f"
                     class="nav-menu w-nav-menu"><a href="/" aria-current="page"
-                        class="nav-link w-nav-link w--current">Home</a><a href="All-Categories.html"
+                        class="nav-link w-nav-link w--current" ><img src="images/logo.png" style="height:80px; width: 100px;" alt=""></a><a href="/" aria-current="page"
+                        class="nav-link w-nav-link w--current" >Home</a><a href="All-Categories.html"
                         class="nav-link w-nav-link">All Categories</a><a href="Contact.html"
                         class="nav-link w-nav-link">Contact</a></nav>
                 <a href="/" id="w-node-c2fb87ad-b285-099a-cd27-785fd4bbdf3b-d4bbdf2f" aria-current="page"
@@ -367,7 +375,7 @@ include('includes/connect.php')
         </div>
     </div>
     <div class="section-hero wf-section">
-        <div class="hero-content">
+        <div class="hero-content"style="  padding-top: 150px;">
             <h1 class="hero-title">Craft your dreams</h1>
             <p class="hero-paragraph">Find &amp; Make your interior really stand out from the box.</p><a href="All-Categories.html"
                 class="button-gold w-button">Shop now</a>
@@ -415,68 +423,8 @@ include('includes/connect.php')
                         </div>
                     </div>
                     <?php
-                      $select_query="Select * from `categories`";
-                      $result_query=mysqli_query($con,$select_query);
-                      while($row=mysqli_fetch_assoc($result_query)){
-                       $category_title=$row['category_title'];
-                      // $category_id=$row['category_id'];
-                      // echo "<option value='$category_title'>$category_title</option>";
-                      // echo "<option value='$category_title'>$category_title</option>";
-                      }
-                    $select_query="Select * from `products` order by rand()";
-                    $result_query=mysqli_query($con,$select_query);
-                    
-                  
-                
-                    // $row=mysqli_fetch_assoc($result_query);
-                    // echo $row['product_title'];
-                    while($row=mysqli_fetch_assoc($result_query)){
-                        $product_id=$row['product_id'];
-                        $product_title=$row['product_title'];
-                        $product_description=$row['product_description'];
-                        $product_image1=$row['product_image1'];
-                        $product_price=$row['product_price'];
-                       // $category_id=$row['category_id'];
-                        $category_title=$row['category_title'];
-
-                      
-                    
-                        echo "<div data-w-id='1fab0f69-2bc8-13ec-f902-41e1f38dfb4a' role='listitem'
-                        class='product-item w-dyn-item'><a class='product-image-wrapper w-inline-block'><img
-                                src='./Admin-Panel/product_images/$product_image1'
-                                loading='eager'
-                                data-wf-sku-bindings='%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D'
-                                alt='' sizes='(max-width: 479px) 94vw, (max-width: 991px) 47vw, 22vw'
-                                srcset='./Admin-Panel/product_images/$product_image1' 500w, './Admin-Panel/product_images/$product_image1' 600w'
-                                class='product-thumbnail' /><img
-                                src='./Admin-Panel/product_images/$product_image1'
-                                loading='eager' style='opacity:0' alt=''
-                                sizes='(max-width: 479px) 94vw, (max-width: 991px) 47vw, 22vw'
-                                srcset='./Admin-Panel/product_images/$product_image1' 600w'
-                                class='product-hover-thumbnail' /></a>
-                        <div class='product-info'>
-                            <a href='Product.html' class='product-link w-inline-block'>
-                                <h6 class='product-title'>$product_title</h6>
-                            </a>
-                            
-                            <div class='price'>
-                                <div 'data-wf-sku-bindings=%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D'
-                                    class='product-price'>$product_price</div>
-                                <div 'data-wf-sku-bindings=%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D'
-                                    class='product-compare-at-price'>$product_price</div>
-                            </div>
-                        </div>
-                        <div class='w-dyn-list'>
-                            <div role='list class=w-dyn-items'>
-                                <div role='listitem class=w-dyn-item'>
-                                    <a href='Product.html' class='product-category-link w-inline-block'>
-                                        <div> $category_title</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>";
-                    }
+                      getproducts();
+                      getuniquecategory();
                     ?> 
 
                 </div>
@@ -491,68 +439,53 @@ include('includes/connect.php')
                     <div id="w-node-_98b03b0a-a351-5220-ae46-bc8d818f0c55-de44d9b0" class="testimonial-item">
                         <div class="testimonial-info">
                             <div class="testimonial-content">Great quality, pricing and service! I highly recommend this
-                                store. I&#x27;m so in love with their furniture design! They were very nice.</div><img
+                                store. I&#x27;m so in love with their products! They were very nice.</div><img
                                 src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8de215b522710f7e2c21_star.svg"
                                 loading="lazy" alt="" class="testimonial-rating-star" />
                         </div>
                         <div class="author-info">
-                            <h6 class="author-name">Justus lucas</h6>
-                            <h6 class="author-position">senior developer</h6>
+                            <h6 class="author-name">Client Name</h6>
+                            <h6 class="author-position">Client location</h6>
                         </div>
                     </div>
                     <div id="w-node-fabe1091-3921-5f73-b532-914a6530cf56-de44d9b0" class="testimonial-item">
                         <div class="testimonial-info">
-                            <div class="testimonial-content">It is a long established fact that a reader will be
-                                distracted by the readable content of a page when looking at its layout.</div><img
+                            <div class="testimonial-content">Great quality, pricing and service! I highly recommend this
+                                store. I&#x27;m so in love with their products! They were very nice.</div><img
                                 src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8de215b522710f7e2c21_star.svg"
                                 loading="lazy" alt="" class="testimonial-rating-star" />
                         </div>
                         <div class="author-info">
-                            <h6 class="author-name">Winston hanson</h6>
-                            <h6 class="author-position"><strong>product manager</strong></h6>
+                            <h6 class="author-name"></h6>
+                            <h6 class="author-position"><strong></strong></h6>
                         </div>
                     </div>
                     <div id="w-node-dee0cb91-9c2b-884c-1a69-b642c2c4aa69-de44d9b0" class="testimonial-item">
                         <div class="testimonial-info">
-                            <div class="testimonial-content">the printing and typesetting industry. Lorem Ipsum has been
-                                the industry&#x27;s standard dummy text ever since the.</div><img
+                            <div class="testimonial-content">Great quality, pricing and service! I highly recommend this
+                                store. I&#x27;m so in love with their products! They were very nice.</div><img
                                 src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8de215b522710f7e2c21_star.svg"
                                 loading="lazy" alt="" class="testimonial-rating-star" />
                         </div>
                         <div class="author-info">
-                            <h6 class="author-name">Naima haley</h6>
-                            <h6 class="author-position">head of marketing</h6>
+                            <h6 class="author-name"></h6>
+                            <h6 class="author-position"></h6>
                         </div>
                     </div>
                     <div id="w-node-b17e0bb2-6579-cf2f-d039-69e39acf77e9-de44d9b0" class="testimonial-item">
                         <div class="testimonial-info">
-                            <div class="testimonial-content">There are many variations of passages of Lorem Ipsum
-                                available, but the majority have suffered alteration in some form.</div><img
+                            <div class="testimonial-content">Great quality, pricing and service! I highly recommend this
+                                store. I&#x27;m so in love with their products! They were very nice.</div><img
                                 src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8de215b522710f7e2c21_star.svg"
                                 loading="lazy" alt="" class="testimonial-rating-star" />
                         </div>
                         <div class="author-info">
-                            <h6 class="author-name">Jerome mayo</h6>
-                            <h6 class="author-position">CEO, Google</h6>
+                            <h6 class="author-name"></h6>
+                            <h6 class="author-position"></h6>
                         </div>
                     </div>
                 </div>
-                <div class="w-layout-grid client-grid">
-                    <div id="w-node-_96393a12-83f8-40e5-f47a-312212ad0fe2-de44d9b0" class="client-item"><img
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8f6ce50150404a978676_client-1.svg"
-                            loading="lazy" alt="" class="client-image" /></div>
-                    <div id="w-node-_96393a12-83f8-40e5-f47a-312212ad0fe4-de44d9b0" class="client-item"><img
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8f6ce50150c2c9978677_client-2.svg"
-                            loading="lazy" alt="" class="client-image" /></div>
-                    <div id="w-node-_96393a12-83f8-40e5-f47a-312212ad0fe6-de44d9b0" class="client-item"><img
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8f6ce5015046e0978678_client-3.svg"
-                            loading="lazy" alt="" class="client-image" /></div>
-                    <div id="w-node-_96393a12-83f8-40e5-f47a-312212ad0fe8-de44d9b0" class="client-item"><img
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8f6ce501507521978679_client-4.svg"
-                            loading="lazy" alt="" class="client-image" /></div><img
-                        src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636b8f6ce50150293897867a_client-5.svg"
-                        loading="lazy" alt="" class="client-image" />
-                </div>
+             
             </div>
         </div>
     </div>
@@ -560,56 +493,34 @@ include('includes/connect.php')
         <div class="container w-container">
             <h4>Our categories</h4>
             <div class="w-layout-grid category-grid">
-                <div class="w-dyn-list">
-                    <div role="list" class="w-dyn-items">
-                        <div data-w-id="7425a012-7890-62e7-54e4-d2dd0f45b84b" role="listitem"
-                            class="category-item w-dyn-item"><a href="All-Categories.html"
-                                class="category-link w-inline-block"><img
-                                    src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01.jpg"
-                                    loading="eager"
-                                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    alt="" sizes="(max-width: 479px) 93vw, (max-width: 991px) 96vw, 94vw"
-                                    srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01.jpg 700w"
-                                    class="category-image" /></a>
-                            <div class="category-heading-wrapper">
-                                <div class="category-name">Living room</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-dyn-list">
-                    <div role="list" class="w-dyn-items">
-                        <div data-w-id="e2190adc-78f7-58c6-b284-d27ed37293c8" role="listitem"
-                            class="category-item w-dyn-item"><a href="All-Categories.html"
-                                class="category-link round w-inline-block"><img
-                                    src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e59497d1f0219535a92ea_category-02.jpg"
-                                    loading="eager" alt=""
-                                    sizes="(max-width: 479px) 93vw, (max-width: 991px) 96vw, 94vw"
-                                    srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e59497d1f0219535a92ea_category-02-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e59497d1f0219535a92ea_category-02.jpg 700w"
-                                    class="category-image round" /></a>
-                            <div class="category-heading-wrapper">
-                                <div class="category-name">TV Stands</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-dyn-list">
-                    <div role="list" class="w-dyn-items">
-                        <div data-w-id="7cfde9d4-3c58-55ec-cbef-1dafee72e56c" role="listitem"
-                            class="category-item w-dyn-item"><a href="All-Categories.html"
-                                class="category-link w-inline-block"><img
-                                    src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e595492fb7bc06b82cfab_category-03.jpg"
-                                    loading="eager"
-                                    style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
-                                    alt="" sizes="(max-width: 479px) 93vw, (max-width: 991px) 96vw, 94vw"
-                                    srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e595492fb7bc06b82cfab_category-03-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e595492fb7bc06b82cfab_category-03.jpg 700w"
-                                    class="category-image" /></a>
-                            <div class="category-heading-wrapper">
-                                <div class="category-name">3 Seater Sofas</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php
+$select_categories="select * from `categories`";
+$result_categories=mysqli_query($con,$select_categories);
+
+while($row_data=mysqli_fetch_assoc($result_categories)){
+$category_title=$row_data['category_title'];
+$category_id=$row_data['category_id'];
+echo "<div class='w-dyn-list'>
+<div role='list' class='w-dyn-items'>
+    <div data-w-id='7425a012-7890-62e7-54e4-d2dd0f45b84b' role='listitem'
+        class='category-item w-dyn-item'><a href='All-Categories.php?category_id=$category_id'
+            class='category-link w-inline-block'><img
+                src='https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01.jpg'
+                loading='eager'
+                style='-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)'
+                alt='' sizes='(max-width: 479px) 93vw, (max-width: 991px) 96vw, 94vw'
+                srcset='https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/636e593f18e57415fe49a431_category-01.jpg 700w'
+                class='category-image' /></a>
+        <div class='category-heading-wrapper'>
+            <div class='category-name'>$category_title</div>
+        </div>
+    </div>
+</div>
+</div>";
+}
+?>
+                
+                
             </div>
         </div>
     </div>
@@ -639,25 +550,10 @@ include('includes/connect.php')
                     <h6>15 days returns</h6>
                 </div>
             </div>
-            <div class="background-video-wrapper">
-                <div data-poster-url="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-poster-00001.jpg"
-                    data-video-urls="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-transcode.mp4,https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-transcode.webm"
-                    data-autoplay="true" data-loop="true" data-wf-ignore="true"
-                    class="background-video w-background-video w-background-video-atom"><video
-                        id="48585872-880f-a81a-611f-fbc129e132e5-video" autoplay="" loop=""
-                        style="background-image:url(&quot;https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-poster-00001.jpg&quot;)"
-                        muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
-                        <source
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-transcode.mp4"
-                            data-wf-ignore="true" />
-                        <source
-                            src="https://assets.website-files.com/636b7ab8528dc749ad44d9af/636e57e8f118df72807e2638_bg-video-transcode.webm"
-                            data-wf-ignore="true" />
-                    </video></div>
-            </div>
+           
         </div>
     </div>
-    <div class="section-instagram section-bottom wf-section">
+    <!-- <div class="section-instagram section-bottom wf-section">
         <div class="container w-container">
             <div class="instagram-title"><a href="https://www.instagram.com/webflow/" target="_blank"
                     class="instagram-id">@homestore</a>
@@ -716,7 +612,7 @@ include('includes/connect.php')
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="footer wf-section">
         <div class="container w-container">
             <div class="w-layout-grid footer-grid">
@@ -739,29 +635,29 @@ include('includes/connect.php')
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c996829-3c996817" class="footer-menu">
                     <h5>Pages</h5>
-                    <div><a href="/" aria-current="page" class="footer-menu-link w--current">Home</a><a href="/home-2"
-                            class="footer-menu-link">Home 2</a><a href="/shop" class="footer-menu-link">Shop</a><a
-                            href="/about" class="footer-menu-link">About</a>
-                        <a href="/blog" class="footer-menu-link">Blog</a><a href="/faqs"
-                            class="footer-menu-link">FAQs</a><a href="/contact" class="footer-menu-link">Contact</a>
+                    <div><a href="/" aria-current="page" class="footer-menu-link w--current">Home</a><a href=""
+                            class="footer-menu-link">All Categories</a><a
+                            href="" class="footer-menu-link">Contact</a>
+
                     </div>
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c996836-3c996817" class="footer-menu">
-                    <h5>Info</h5><a href="/template-info/style-guide" class="footer-menu-link">Style Guide</a><a
-                        href="/template-info/licenses" class="footer-menu-link">Licenses</a><a
-                        href="/template-info/changelog" class="footer-menu-link">Changelog</a>
+                    <h5>Info</h5>
+                    <a
+                        href="" class="footer-menu-link">Profile</a><a
+                        href="" class="footer-menu-link">Cart</a>
+                        <a
+                        href="" class="footer-menu-link">Track Order</a>
+
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c99683f-3c996817" class="footer-menu">
                     <h5>Social</h5><a href="https://www.facebook.com/" target="_blank"
                         class="footer-menu-link">Facebook</a><a href="https://www.instagram.com/" target="_blank"
-                        class="footer-menu-link">Instagram</a><a href="https://in.pinterest.com/" target="_blank"
-                        class="footer-menu-link">Pinterest</a><a href="https://www.linkedin.com/" target="_blank"
-                        class="footer-menu-link">Linkedin</a>
+                        class="footer-menu-link">Instagram</a>
                 </div>
             </div>
         </div>
-        <div class="copyright">Designed by <a href="https://webflow.com/templates/designers/flowsark"
-                target="_blank">Flowsark</a>. Powered by <a href="https://webflow.com/" target="_blank">Webflow</a>.
+        <div class="copyright"><a href="">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="" target="_blank">Privacy Policy</a>.
         </div>
     </div>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=636b7ab8528dc749ad44d9af"

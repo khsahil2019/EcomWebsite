@@ -1,5 +1,6 @@
 <?php
-include('includes/connect.php')
+include('includes/connect.php');
+include('functions/common_functions.php');
 ?>
 <html data-wf-domain="homestore-flowsark.webflow.io" data-wf-page="636e5de493894c4501362219"
     data-wf-site="636b7ab8528dc749ad44d9af" class=" w-mod-js w-mod-ix">
@@ -12,8 +13,7 @@ include('includes/connect.php')
     </style>
     <meta charset="utf-8">
     <title>Homestore - Webflow Ecommerce Website Template</title>
-    <meta
-        content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
+    <meta content="The Homestore is a modern &amp; flexible template designed to make your business online to create a professional web presence of your business."
         name="description">
     <meta content="Homestore - Webflow Ecommerce Website Template" property="og:title">
     <meta
@@ -40,9 +40,7 @@ include('includes/connect.php')
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1095.0" data-gr-ext-installed="">
-    <div class="top-bar">
-        <div class="top-bar-text">Free shipping for all orders of $150+</div>
-    </div>
+   
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
         role="banner" class="navbar w-nav">
         <div class="container w-container">
@@ -340,7 +338,7 @@ while($row_data=mysqli_fetch_assoc($result_categories)){
 $category_title=$row_data['category_title'];
 $category_id=$row_data['category_id'];
 echo " <div role='listitem' class='w-dyn-item'>
-<a href='index.php?category=$category_id' class='sidebar-category-link'>$category_title</a></div>";
+<a href='All-Categories.php?category=$category_id' class='sidebar-category-link'>$category_title</a></div>";
 }
 ?>
                               
@@ -351,286 +349,13 @@ echo " <div role='listitem' class='w-dyn-item'>
                 <div id="w-node-a9a57639-f211-80e9-9839-1609c5afbf16-01362219" class="shop-product">
                     <div class="w-dyn-list">
                         <div role="list" class="product-grid-page w-dyn-items">
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878dcd3f80a9c0a749a798_product-1.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878dcd3f80a9c0a749a798_product-1-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878dcd3f80a9c0a749a798_product-1.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a02004cd844dbb7b0ae8d_product-hover-1.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a02004cd844dbb7b0ae8d_product-hover-1-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a02004cd844dbb7b0ae8d_product-hover-1.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">TIED RIBBONS Designer DSW Chair</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;245.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;289.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Dining Chairs</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878d18ff66593b993c926a_product-2.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878d18ff66593b993c926a_product-2-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878d18ff66593b993c926a_product-2.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a020d2083d14f7a6c9c93_product-hover-2.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a020d2083d14f7a6c9c93_product-hover-2-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a020d2083d14f7a6c9c93_product-hover-2.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">CRAFTCANE Cane Chair with Cushion</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;178.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;236.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>3 Seater Sofas</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878af2602e1076921ce1a3_product-3.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878af2602e1076921ce1a3_product-3-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878af2602e1076921ce1a3_product-3.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a021a3c33b04cd7ebe4d4_product-hover-3.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a021a3c33b04cd7ebe4d4_product-hover-3-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a021a3c33b04cd7ebe4d4_product-hover-3.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">ANJWAR Plastic Arm Tub Chairs</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;278.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;356.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Living room</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878a67303d077f585652a1_product-4.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878a67303d077f585652a1_product-4-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878a67303d077f585652a1_product-4.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a022bc8b1938cd916eb30_product-hover-4.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a022bc8b1938cd916eb30_product-hover-4-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a022bc8b1938cd916eb30_product-hover-4.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">Solimo Carina Engineered Wood</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;240.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;280.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Dining Chairs</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a029d8f2fdfa586a73e06_product-5.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a029d8f2fdfa586a73e06_product-5-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a029d8f2fdfa586a73e06_product-5.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a023cf6c144ade0d75c7b_product-hover-5.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a023cf6c144ade0d75c7b_product-hover-5-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a023cf6c144ade0d75c7b_product-hover-5.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">Solimo High Seating Stigen Bar Stool</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;120.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;140.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>TV Stands</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638789511e6dace77c064e09_product-6.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638789511e6dace77c064e09_product-6-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638789511e6dace77c064e09_product-6.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a024cbc615a6a6d39bd30_product-hover-6.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a024cbc615a6a6d39bd30_product-hover-6-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a024cbc615a6a6d39bd30_product-hover-6.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">UHUD Beautiful Antique Wooden</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;185.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;206.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Armchairs</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638788a67b37725e4db16095_product-7.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638788a67b37725e4db16095_product-7-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638788a67b37725e4db16095_product-7.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a025944470658a7878b92_product-hover-7.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a025944470658a7878b92_product-hover-7-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a025944470658a7878b92_product-hover-7.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">Sheesham Wood 8 Seater Dining</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;145.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;186.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Living room</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-w-id="0f9e1b1e-781b-075c-a6cd-92df0f418724" role="listitem"
-                                class="product-item w-dyn-item"><a href="Product.html"
-                                    class="product-image-wrapper w-inline-block"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878862fcbe3fdf6902a4bb_product-8.jpg"
-                                        loading="eager"
-                                        data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_main_image_4dr%22%2C%22to%22%3A%22src%22%7D%5D"
-                                        alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878862fcbe3fdf6902a4bb_product-8-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/63878862fcbe3fdf6902a4bb_product-8.jpg 600w"
-                                        class="product-thumbnail"><img
-                                        src="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a0266bc615a0fe339be59_product-hover-8.jpg"
-                                        loading="eager" style="opacity: 0;" alt=""
-                                        sizes="(max-width: 479px) 94vw, (max-width: 767px) 47vw, (max-width: 991px) 31vw, 30vw"
-                                        srcset="https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a0266bc615a0fe339be59_product-hover-8-p-500.jpg 500w, https://assets.website-files.com/636b81cdf698e13d38fd7cf7/638a0266bc615a0fe339be59_product-hover-8.jpg 600w"
-                                        class="product-hover-thumbnail"></a>
-                                <div class="product-info"><a href="Product.html"
-                                        class="product-link w-inline-block">
-                                        <h6 class="product-title">Trevi Bali 3 Seater Fabric Sofa</h6>
-                                    </a>
-                                    <div class="price">
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_price_%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-price">$&nbsp;125.00&nbsp;USD</div>
-                                        <div data-wf-sku-bindings="%5B%7B%22from%22%3A%22f_compare_at_price_7dr10dr%22%2C%22to%22%3A%22innerHTML%22%7D%5D"
-                                            class="product-compare-at-price">$&nbsp;156.00&nbsp;USD</div>
-                                    </div>
-                                </div>
-                                <div class="w-dyn-list">
-                                    <div role="list" class="w-dyn-items">
-                                        <div role="listitem" class="w-dyn-item"><a href="Product.html"
-                                                class="product-category-link w-inline-block">
-                                                <div>Armchairs</div>
-                                            </a></div>
-                                    </div>
-                                </div>
-                            </div>
+                <?php
+                
+                    getproducts();
+                    getuniquecategory();
+                ?> 
+
+                           
                         </div>
                     </div>
                 </div>
@@ -641,48 +366,47 @@ echo " <div role='listitem' class='w-dyn-item'>
         <div class="container w-container">
             <div class="w-layout-grid footer-grid">
                 <div id="w-node-_2081249a-3245-4081-2479-06333c99681a-3c996817" class="footer-subscribe">
-                    <h5 class="footer-subscribe-heading">Let's connect with us, Get a 20% discount on your 1st order.
-                    </h5>
+                    <h5 class="footer-subscribe-heading">Let&#x27;s connect with us, Get a 20% discount on your 1st
+                        order.</h5>
                     <div class="subscribe-form-wrapper w-form">
                         <form id="wf-form-Newsletter-Form" name="wf-form-Newsletter-Form" data-name="Newsletter Form"
-                            method="get" class="subscribe-form" aria-label="Newsletter Form"><input type="email"
-                                class="field-input w-input" maxlength="256" name="Email" data-name="Email"
-                                placeholder="Enter email here" id="Email" required=""><input type="submit"
-                                value="Submit" data-wait="Please wait..." class="button-gold w-button"></form>
-                        <div class="success-message w-form-done" tabindex="-1" role="region"
-                            aria-label="Newsletter Form success">
+                            method="get" class="subscribe-form"><input type="email" class="field-input w-input"
+                                maxlength="256" name="Email" data-name="Email" placeholder="Enter email here" id="Email"
+                                required="" /><input type="submit" value="Submit" data-wait="Please wait..."
+                                class="button-gold w-button" /></form>
+                        <div class="success-message w-form-done">
                             <div>Thank you! Your submission has been received!</div>
                         </div>
-                        <div class="error-message w-form-fail" tabindex="-1" role="region"
-                            aria-label="Newsletter Form failure">
+                        <div class="error-message w-form-fail">
                             <div>Oops! Something went wrong while submitting the form.</div>
                         </div>
                     </div>
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c996829-3c996817" class="footer-menu">
                     <h5>Pages</h5>
-                    <div><a href="/" class="footer-menu-link">Home</a><a href="/home-2" class="footer-menu-link">Home
-                            2</a><a href="/shop" aria-current="page" class="footer-menu-link w--current">Shop</a><a
-                            href="/about" class="footer-menu-link">About</a><a href="/blog"
-                            class="footer-menu-link">Blog</a><a href="/faqs" class="footer-menu-link">FAQs</a><a
-                            href="/contact" class="footer-menu-link">Contact</a></div>
+                    <div><a href="/" aria-current="page" class="footer-menu-link w--current">Home</a><a href=""
+                            class="footer-menu-link">All Categories</a><a
+                            href="" class="footer-menu-link">Contact</a>
+
+                    </div>
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c996836-3c996817" class="footer-menu">
-                    <h5>Info</h5><a href="/template-info/style-guide" class="footer-menu-link">Style Guide</a><a
-                        href="/template-info/licenses" class="footer-menu-link">Licenses</a><a
-                        href="/template-info/changelog" class="footer-menu-link">Changelog</a>
+                    <h5>Info</h5>
+                    <a
+                        href="" class="footer-menu-link">Profile</a><a
+                        href="" class="footer-menu-link">Cart</a>
+                        <a
+                        href="" class="footer-menu-link">Track Order</a>
+
                 </div>
                 <div id="w-node-_2081249a-3245-4081-2479-06333c99683f-3c996817" class="footer-menu">
                     <h5>Social</h5><a href="https://www.facebook.com/" target="_blank"
                         class="footer-menu-link">Facebook</a><a href="https://www.instagram.com/" target="_blank"
-                        class="footer-menu-link">Instagram</a><a href="https://in.pinterest.com/" target="_blank"
-                        class="footer-menu-link">Pinterest</a><a href="https://www.linkedin.com/" target="_blank"
-                        class="footer-menu-link">Linkedin</a>
+                        class="footer-menu-link">Instagram</a>
                 </div>
             </div>
         </div>
-        <div class="copyright">Designed by <a href="https://webflow.com/templates/designers/flowsark"
-                target="_blank">Flowsark</a>. Powered by <a href="https://webflow.com/" target="_blank">Webflow</a>.
+        <div class="copyright"><a href="">Terms and conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="" target="_blank">Privacy Policy</a>.
         </div>
     </div>
     <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=636b7ab8528dc749ad44d9af"
